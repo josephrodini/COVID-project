@@ -22,6 +22,18 @@ I am interested in public health for a number of reasons, mainly because it affe
 
 ### Data Sources
 
-- 
+There were four main sources that comprised this analysis:
+
+- Data on county vaccination rates from https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh
+- Data on county cases and deaths numbers from https://github.com/nytimes/covid-19-data
+- Data on county economic factors from https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
+- Data on county coordinates and population from https://simplemaps.com/data/us-counties
+
+All four data sources are CSV files
 
 ### Analysis Questions
+
+The final, cleaned dataset contains the predictors of unemployment rate and median income and the outcomes of COVID cases, COVID deaths, and COVID vaccination rates, along with some other summary statistics such as population. Questions to be considered include:
+
+- Does unemployment rate predict COVID outcomes?
+- Does median income predict COVID outcomes?
