@@ -1,0 +1,35 @@
+-- Creating tables for COVID-project
+CREATE TABLE Lat_Long (
+    fips INT NOT NULL,
+	ST VARCHAR(2) NOT NULL,
+	lat FLOAT(4) NOT NULL,
+	lng FLOAT(4) NOT NULL,
+	population INT NOT NULL,
+	PRIMARY KEY (fips)
+);
+
+CREATE TABLE Latest_Vax (
+	fips INT NOT NULL,
+	Recip_County VARCHAR(40) NOT NULL,
+	ST VARCHAR(2) NOT NULL,
+	Vax_Pct FLOAT(1) NOT NULL,
+	FOREIGN KEY (fips) REFERENCES Lat_Long (fips)
+);
+
+CREATE TABLE Latest_Deaths (
+	date DATE NOT NULL,
+	county VARCHAR(40) NOT NULL,
+	fips INT NOT NULL,
+	cases FLOAT(1) NOT NULL,
+	deaths FLOAT(1) NOT NULL,
+	ST VARCHAR(2) NOT NULL,
+	FOREIGN KEY (fips) REFERENCES Lat_Long (fips)
+);
+
+CREATE TABLE Econ (
+	fips INT NOT NULL,
+	ST VARCHAR(2) NOT NULL,
+	Unemployment_rate_2021 FLOAT(1) NOT NULL,
+	Median_Household_Income_2020 INT NOT NULL,
+	FOREIGN KEY (fips) REFERENCES Lat_Long (fips)
+);

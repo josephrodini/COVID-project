@@ -1,0 +1,59 @@
+-- Create combined table
+
+-- Joining lat_long and econ
+SELECT lat_long.fips,
+	 lat_long.ST,
+     lat_long.lat,
+     lat_long.lng,
+	 lat_long.population,
+	 econ.Unemployment_rate_2021,
+	 econ.Median_Household_Income_2020
+INTO lat_long_econ
+FROM lat_long
+LEFT JOIN econ
+ON lat_long.fips = econ.fips;
+
+-- Joining the above table with latest_deaths
+SELECT lat_long_econ.fips,
+	 lat_long_econ.ST,
+     lat_long_econ.lat,
+     lat_long_econ.lng,
+	 lat_long_econ.population,
+	 lat_long_econ.Unemployment_rate_2021,
+	 lat_long_econ.Median_Household_Income_2020,
+	 latest_deaths.county,
+	 latest_deaths.cases,
+	 latest_deaths.deaths
+INTO lat_long_econ_deaths
+FROM lat_long_econ
+LEFT JOIN latest_deaths
+ON lat_long_econ.fips = latest_deaths.fips;
+
+-- Combining above table with vax 
+SELECT lat_long_econ_deaths.fips,
+	 lat_long_econ_deaths.ST,
+     lat_long_econ_deaths.lat,
+     lat_long_econ_deaths.lng,
+	 lat_long_econ_deaths.population,
+	 lat_long_econ_deaths.Unemployment_rate_2021,
+	 lat_long_econ_deaths.Median_Household_Income_2020,
+	 lat_long_econ_deaths.county,
+	 lat_long_econ_deaths.cases,
+	 lat_long_econ_deaths.deaths,
+	 latest_vax.vax_pct
+INTO all_tables_merged
+FROM lat_long_econ_deaths
+LEFT JOIN latest_vax
+ON lat_long_econ_deaths.fips = latest_vax.fips;
+
+-- Creating cases and deaths per 100,000
+ALTER TABLE all_tables_merged
+	ADD cases_100000 FLOAT(2);
+
+ALTER TABLE all_tables_merged
+	ADD	deaths_100000 FLOAT(2);
+
+UPDATE all_tables_merged SET cases_100000 = (cases / population * 100000);
+UPDATE all_tables_merged SET deaths_100000 = (deaths / population * 100000);
+
+SELECT * FROM all_tables_merged;
