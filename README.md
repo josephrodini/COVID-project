@@ -48,12 +48,25 @@ All four data sources are CSV files
 
 ### Code from Jupyter Notebook
 
-
 - [Requirements.txt](https://github.com/josephrodini/COVID-project/blob/main/requirements.txt) for Anaconda environment
 - [ETL process for all four data files](https://github.com/josephrodini/COVID-project/blob/main/ETL/COVID_data_cleaning.ipynb)
 - [Logistic regression models](https://github.com/josephrodini/COVID-project/blob/main/Machine_Learning/Logistic_Regression.ipynb)
 - [Support vector machines](https://github.com/josephrodini/COVID-project/blob/main/Machine_Learning/SVM.ipynb)
 
+
+### Initial Data Exploration
+
+The four data files were cleaned, mostly meaning null values were dropped and columns renamed so they could be merged. About 5% of all deaths reported were lost due to the dropped values, but most of those came from Puerto Rico and Guam, territories that were outside the purview of this project. Files were exported from Python Pandas to CSV files.
+
+### PostgreSQL Database
+
+- The CSV files were loaded into tables in PostgreSQL accessed through PGAdmin. This was a locally hosted database.
+
+- [](Queries to create the tables)
+
+- [](Queries to join tables)
+
+- [](ERD below)
 
 
 
