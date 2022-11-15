@@ -48,7 +48,13 @@ All four data sources are CSV files
 
 ### Code from Jupyter Notebook
 
+
+- [Requirements.txt](https://github.com/josephrodini/COVID-project/blob/main/requirements.txt) for Anaconda environment
 - [ETL process for all four data files](https://github.com/josephrodini/COVID-project/blob/main/ETL/COVID_data_cleaning.ipynb)
+- [Logistic regression models](https://github.com/josephrodini/COVID-project/blob/main/Machine_Learning/Logistic_Regression.ipynb)
+- [Support vector machines](https://github.com/josephrodini/COVID-project/blob/main/Machine_Learning/SVM.ipynb)
+
+
 
 
 
