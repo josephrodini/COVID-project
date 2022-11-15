@@ -74,6 +74,21 @@ The four data files were cleaned, mostly meaning null values were dropped and co
 
 First, logistic regressions were performed to see if the economic variables of unemployment rate and median household income could predict COVID-19 outcomes. 
 
+- Logistic regression predicting Cases per 100,000 People
+
+![LRCases](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegCases.png)
+
+- Logistic regression predicting Deaths per 100,000 People
+
+![LRCases](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegDeaths.png)
+
+- Logistic regression predicting Vaccination Rate
+
+![LRCases](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegVax.png)
+
+
+
+
 
 
 
