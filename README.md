@@ -60,13 +60,15 @@ The four data files were cleaned, mostly meaning null values were dropped and co
 
 ### PostgreSQL Database
 
-- The CSV files were loaded into tables in PostgreSQL accessed through PGAdmin. This was a locally hosted database.
+- The CSV files were loaded into tables in PostgreSQL accessed through PGAdmin. This was a locally hosted database. In addition to making and merging the tables, the calculated columns of cases per 100,000 people and deaths per 100,000 people were created.
 
-- [](Queries to create the tables)
+- [https://github.com/josephrodini/COVID-project/blob/segment-4/SQL/creating_tables](Queries to create the tables)
 
-- [](Queries to join tables)
+- [https://github.com/josephrodini/COVID-project/blob/segment-4/SQL/merging_tables](Queries to join tables and create the cases and deaths per 100,000 people)
 
-- [](ERD below)
+- ERD below
+
+![ERD](https://github.com/josephrodini/COVID-project/blob/main/Images/COVID-projectDBD.PNG?raw=true)
 
 
 
