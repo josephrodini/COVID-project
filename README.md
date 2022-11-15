@@ -80,11 +80,11 @@ First, logistic regressions were performed to see if the economic variables of u
 
 - Logistic regression predicting Deaths per 100,000 People
 
-![LRDeaths](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegDeaths.png?raw=true)
+![LRDeaths](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegDeaths.PNG?raw=true)
 
 - Logistic regression predicting Vaccination Rate
 
-![LRVax](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegVax.png?raw=true)
+![LRVax](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegVax.PNG?raw=true)
 
 
 
