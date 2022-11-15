@@ -86,6 +86,42 @@ First, logistic regressions were performed to see if the economic variables of u
 
 ![LRVax](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/RegVax.PNG?raw=true)
 
+Next, to compare logistic regression to a supervised machine learning model, support vector machines were used to test the predictive power of the economic variables. To briefly summarize, the SVMs were nearly identical in performance to the linear regressions, showing 55.3% accuracy for cases per 100,000, 72.9% accuracy for deaths per 100,000, and 65% for vaccination rate. So, although they work differently, they arrived at the same conclusion.
+
+## Results
+
+
+### Success of Predictors
+
+- Case rate was not well-predicted by economic indicators, meaning that the spread of COVID was fairly uniform across the country regardless of economic level.
+
+- However, death rate was well predicted by economic indicators, demonstrating that counties with more economic resources were better able to mitigate the pernicious effects of the pandemic.
+
+- Vaccination rate was somewhat well predicted by economic indicators, suggesting that counties with more economic resources did somewhat of a better job getting their populations vaccinated.
+
+
+### Tableau Dashboard
+
+- Link: [COVID-project visualizations](https://public.tableau.com/app/profile/joe.rodini/viz/COVID-projectvisualizations/COVID-project#1)
+
+### Presentation 
+
+- Click here to see the slides.
+
+- Click here to see the video.
+
+## Summary
+
+### Conclusions
+
+- Top accuracy score: Logistic regression of unemployment and median income predicting deaths per 100,000 people: 73.3%
+- Logistic regression and SVM performed almost identically
+
+### Additional Analysis
+
+- Factors that might have obscured the relationship between economic predictors and COVID outcomes might include: population density, political affiliation, education level, and ethnicity.
+
+- Correlation is not necessarily causation–it could be that other variables, such as the ones above, cause the economic predictors and COVID outcomes to show a relationship.
 
 
 
