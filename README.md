@@ -62,13 +62,17 @@ The four data files were cleaned, mostly meaning null values were dropped and co
 
 - The CSV files were loaded into tables in PostgreSQL accessed through PGAdmin. This was a locally hosted database. In addition to making and merging the tables, the calculated columns of cases per 100,000 people and deaths per 100,000 people were created.
 
-- [https://github.com/josephrodini/COVID-project/blob/main/SQL/creating_tables](Queries to create the tables)
+- [Queries to create the tables](https://github.com/josephrodini/COVID-project/blob/main/SQL/creating_tables)
 
-- [https://github.com/josephrodini/COVID-project/blob/main/SQL/merging_tables](Queries to join tables and create the cases and deaths per 100,000 people)
+- [Queries to join tables and create the cases and deaths per 100,000 people](https://github.com/josephrodini/COVID-project/blob/main/SQL/merging_tables)
 
 - ERD below
 
-![ERD](https://github.com/josephrodini/COVID-project/blob/main/Images/COVID-projectDBD.PNG?raw=true)
+![ERD](https://github.com/josephrodini/COVID-project/blob/90dfbe7b35947e681264e41b09a12d28be1e9679/Images/COVID-projectDBD.png)
+
+### Machine Learning
+
+First, logistic regressions were performed to see if the economic variables of unemployment rate and median household income could predict COVID-19 outcomes. 
 
 
 
