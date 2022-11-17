@@ -108,6 +108,8 @@ Next, to compare logistic regression to a supervised machine learning model, sup
 
 - Click here to see the slides [as a PDF]() or [as a Powerpoint file (Powerpoint contains speaker notes)](https://github.com/josephrodini/COVID-project/blob/segment-4/Presentation/COVID-project.pptx).
 
+- Click [here](https://youtu.be/DoPG6PcMDro) to see presentation video.
+
 ## Summary
 
 ### Conclusions
